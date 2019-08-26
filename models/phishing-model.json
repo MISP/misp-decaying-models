@@ -1,0 +1,32 @@
+{
+    "uuid":"dbbd7ba7-6559-48fc-ab58-cc499d1b1143",
+    "name":"Phishing model",
+    "formula": "Polynomial",
+    "ref":[
+        "https://arxiv.org/abs/1902.03914",
+        "https://arxiv.org/abs/1803.11052"
+    ],
+    "parameters": {
+        "lifetime": 3,
+        "decay_speed": 2.3,
+        "threshold":30,
+        "default_base_score": 80,
+        "base_score_config":{
+            "estimative-language": 0.5,
+            "phishing": 0.5
+        }
+    },
+    "description":"Simple model to rapidly decay phishing website.",
+    "attribute_types": [
+        "domain",
+        "domain|ip",
+        "hostname",
+        "hostname|port",
+        "ip-dst",
+        "ip-dst|port",
+        "ip-src",
+        "ip-src|port",
+        "url"
+    ],
+    "version":1
+}
