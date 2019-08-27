@@ -1,0 +1,42 @@
+{
+  "uuid": "073fae4a-2377-4cfa-bd34-2516830d33c3",
+  "name": "NIDS Simple Decaying Model",
+  "formula": "Polynomial",
+  "ref": [
+    "https://arxiv.org/abs/1902.03914",
+    "https://arxiv.org/abs/1803.11052"
+  ],
+  "authors": [
+    "MISP Project"
+  ],
+  "parameters": {
+    "lifetime": 120,
+    "decay_speed": 2,
+    "threshold": 30,
+    "default_base_score": 80,
+    "base_score_config": {
+      "estimative-language": 0.25,
+      "priority-level": 0.25,
+      "retention": 0.25,
+      "targeted-threat-index": 0.125,
+      "false-positive": 0.125
+    }
+  },
+  "description": "Simple decaying model for Network Intrusion Detection System (NIDS). ",
+  "attribute_types": [
+    "domain",
+    "domain|ip",
+    "hostname",
+    "hostname|port",
+    "ip-dst",
+    "ip-dst|port",
+    "ip-src",
+    "ip-src|port",
+    "url",
+    "snort",
+    "suricata",
+    "zeek",
+    "bro"
+  ],
+  "version": 1
+}
