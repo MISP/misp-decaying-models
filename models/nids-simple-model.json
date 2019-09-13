@@ -15,11 +15,13 @@
     "threshold": 30,
     "default_base_score": 80,
     "base_score_config": {
-      "estimative-language": 0.25,
-      "priority-level": 0.25,
-      "retention": 0.25,
-      "targeted-threat-index": 0.125,
-      "false-positive": 0.125
+      "estimative-language:confidence-in-analytic-judgment": 0.1667,
+      "estimative-language:likelihood-probability": 0.1667,
+      "false-positive:risk": 0.1667,
+      "priority-level": 0.1667,
+      "retention": 0.1667,
+      "targeted-threat-index:targeting-sophistication-base-value": 0.0833,
+      "targeted-threat-index:technical-sophistication-multiplier": 0.0833
     }
   },
   "description": "Simple decaying model for Network Intrusion Detection System (NIDS). ",
@@ -38,5 +40,5 @@
     "zeek",
     "bro"
   ],
-  "version": 1
+  "version": 2
 }
