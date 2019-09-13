@@ -15,8 +15,10 @@
     "threshold": 30,
     "default_base_score": 80,
     "base_score_config": {
-      "estimative-language": 0.5,
-      "phishing": 0.5
+      "estimative-language:confidence-in-analytic-judgment": 0.25,
+      "estimative-language:likelihood-probability": 0.25,
+      "phishing:psychological-acceptability": 0.25,
+      "phishing:state": 0.25
     }
   },
   "description": "Simple model to rapidly decay phishing website.",
@@ -31,5 +33,5 @@
     "ip-src|port",
     "url"
   ],
-  "version": 1
+  "version": 2
 }
