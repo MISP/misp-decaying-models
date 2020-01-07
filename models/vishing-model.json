@@ -1,0 +1,30 @@
+{
+  "uuid": "1097c0fe-06eb-4741-94d9-8098301d92f4",
+  "name": "Vishing model",
+  "formula": "Polynomial",
+  "authors": [
+    "MISP Project"
+  ],
+  "ref": [
+    "https://arxiv.org/abs/1902.03914",
+    "https://arxiv.org/abs/1803.11052"
+  ],
+  "parameters": {
+    "lifetime": 10,
+    "decay_speed": 2.3,
+    "threshold": 30,
+    "default_base_score": 80,
+    "base_score_config": {
+      "estimative-language:confidence-in-analytic-judgment": 0.25,
+      "estimative-language:likelihood-probability": 0.25,
+      "phishing:psychological-acceptability": 0.25,
+      "phishing:state": 0.25
+    }
+  },
+  "description": "Simple model to rapidly decay voice scamming, vishing relying on phone-numbers.",
+  "attribute_types": [
+    "phone-number",
+    "prtn"
+  ],
+  "version": 1
+}
